@@ -1,0 +1,99 @@
+.welcomeContainer {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    will-change: top;
+  }
+  .welcome {
+    will-change: top;
+    position: relative;
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.85);
+    display: inline-block;
+    padding: 10px 100px 10px 80px;
+    margin: 55px 20px 0;
+    box-shadow: -10px 10px 0 0 rgba(255, 255, 255, 0.5);
+    text-align: right;
+  }
+  .welcome a {
+    display: inline-block;
+    font-size: 19px;
+  }
+  .welcome .separator {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 20px;
+    color: #afafaf;
+    font-family: initial;
+  }
+  .cover .welcome {
+    margin-top: 160px;
+  }
+  .headerMarker {
+    position: absolute;
+    top: -12px;
+    left: -20px;
+  }
+  *[dir='rtl'] .headerMarker {
+    position: absolute;
+    top: -12px;
+    right: -20px;
+  }
+  .marketing {
+    text-align: center
+  }
+  .marketing p {
+    margin: 20px 60px 40px;
+    font-size: 17px;
+    color: #8b8b8b;
+  }
+  .marketing h2 {
+    margin: 18px 0 25px;
+    font-size: 26px;
+    color: #555;
+    font-weight: 500;
+  }
+  .welcomeLarg {
+    display: block;
+  }
+  .welcomeSmall {
+    display: none;
+  }
+  @media screen and (min-width: 0) and (max-width: 1200px) {
+    .sky {
+      background-size: cover
+    }
+  }
+  @media (min-width: 0) and (max-width: 375px) {
+    .welcomeLarg {
+      display: none;
+    }
+    .welcomeSmall {
+      display: block;
+    }
+  }
+  @media screen and (min-width: 0) and (max-width: 767px) {
+    .welcome .separator {
+      display: none
+    }
+    .welcome a {
+      display: block;
+      margin-top: 15px;
+      font-size: 20px;
+    }
+    .welcome {
+      padding: 10px 80px 10px 30px;
+    }
+    .marketing p {
+      margin: 0px 60px 80px 60px;
+    }
+  }
+  @media screen and (min-width: 0) and (max-width: 480px) {
+    .welcome {
+      padding: 20px 20px 10px 20px;
+    }
+  }
+  
+  .hide {
+      display: none;
+  }
